@@ -1,0 +1,6 @@
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\bin\Debug\Arcanoid.exe.config
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\bin\Debug\Arcanoid.exe
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\bin\Debug\Arcanoid.pdb
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\obj\Debug\Arcanoid.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\obj\Debug\Arcanoid.exe
+c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\obj\Debug\Arcanoid.pdb
