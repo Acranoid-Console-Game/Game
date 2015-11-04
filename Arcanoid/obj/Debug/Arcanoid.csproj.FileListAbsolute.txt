@@ -7,3 +7,6 @@ c:\users\user\documents\visual studio 2015\Projects\Arcanoid Project\Arcanoid\ob
 C:\Users\User\Documents\GitHub\Game\Arcanoid\bin\Debug\Arcanoid.exe.config
 C:\Users\User\Documents\GitHub\Game\Arcanoid\obj\Debug\Arcanoid.exe
 C:\Users\User\Documents\GitHub\Game\Arcanoid\obj\Debug\Arcanoid.pdb
+C:\Users\User\Documents\GitHub\Game\Arcanoid\bin\Debug\Arcanoid.exe
+C:\Users\User\Documents\GitHub\Game\Arcanoid\bin\Debug\Arcanoid.pdb
+C:\Users\User\Documents\GitHub\Game\Arcanoid\obj\Debug\Arcanoid.csprojResolveAssemblyReference.cache
