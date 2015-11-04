@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        int ballTop = 10;
+        int ballTop = 12;
         int ballLeft = 8;
 
         int topDirection = -1;
