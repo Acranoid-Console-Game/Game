@@ -1,1 +1,3 @@
-# Game
+Progress C# Project
+
+Console based game
