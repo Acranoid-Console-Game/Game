@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Net.Mail;
 using System.Threading;
 
 class Program
 {
     static void Main()
     {
-        Console.BackgroundColor = ConsoleColor.White;
-        Console.ForegroundColor = ConsoleColor.Blue;
+        Initialize();
 
         int ballTop = 10;
         int ballLeft = 8;
@@ -21,6 +21,16 @@ class Program
         int leftDirection = -1;
 
         string paddle = "========";
+        
+        char[,] bricks = new char[2, maxLeft];
+        
+        for (int row = 0; row < bricks.GetLength(0); row++)
+        {
+            for (int col = 0; col < bricks.GetLength(1); col++)
+            {
+                bricks[row, col] = '#';
+            }
+        }
 
         while (true)
         {
@@ -55,6 +65,25 @@ class Program
             ballLeft = ballLeft + leftDirection;
             ballTop = ballTop + topDirection;
 
+            if (ballTop < bricks.GetLength(0))
+            {
+                if (bricks[ballTop, ballLeft] == '#')
+                {
+                    bricks[ballTop, ballLeft] = ' ';
+                }
+            }
+
+            // Render bricks
+            for (int row = 0; row < bricks.GetLength(0); row++)
+            {
+                for (int col = 0; col < bricks.GetLength(1); col++)
+                {
+                    Console.SetCursorPosition(col, row);
+                    Console.Write(bricks[row, col]);
+                }
+            }
+
+            // Render ball
             Console.SetCursorPosition(ballLeft, ballTop);
             Console.Write("@");
 
@@ -79,14 +108,25 @@ class Program
                 }
             }
 
+            // Render paddle
             Console.SetCursorPosition(paddleLeft, maxTop);
             Console.WriteLine(paddle);
 
             Thread.Sleep(100);
             Console.Clear();
         }
-        
+
+        GameOver();
+    }
+
+    static void Initialize()
+    {
+        Console.BackgroundColor = ConsoleColor.White;
+        Console.ForegroundColor = ConsoleColor.Blue;
+    }
+    static void GameOver()
+    {
         Console.WriteLine("---GAME OVER---");
-        Console.ReadLine();
+        Console.Read();
     }
 }
